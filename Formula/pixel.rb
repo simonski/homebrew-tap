@@ -1,26 +1,26 @@
 class Pixel < Formula
   desc "Pixel - a command-line tool"
   homepage "https://github.com/simonski/pixel"
-  version "0.1.10"
+  version "0.1.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/simonski/pixel/releases/download/v0.1.10/pixel-0.1.10-darwin-arm64.tar.gz"
-      sha256 "391415c7a338f3face017b3433629c9961c8096110bb44a15d8ba99647bbfd1c"
+      url "https://github.com/simonski/pixel/releases/download/v0.1.12/pixel-0.1.12-darwin-arm64.tar.gz"
+      sha256 "941d069d8446255c390cdfdc70a9dd46cc33329d9a119beba1fe74eed8dfbd25"
     else
-      url "https://github.com/simonski/pixel/releases/download/v0.1.10/pixel-0.1.10-darwin-amd64.tar.gz"
-      sha256 "d65840c1addd0d572888ebbc576f61b4511f067e7239d539e99004e61b3166c9"
+      url "https://github.com/simonski/pixel/releases/download/v0.1.12/pixel-0.1.12-darwin-amd64.tar.gz"
+      sha256 "4c9c31ba4665f3aff2e3821d85be7d701a1d9f9e64af7c9cc649e62f9ee9949c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/simonski/pixel/releases/download/v0.1.10/pixel-0.1.10-linux-arm64.tar.gz"
-      sha256 "2b5b14c7f62f4e844d774519fea553fd5048b411b40aeffef02922834891e263"
+      url "https://github.com/simonski/pixel/releases/download/v0.1.12/pixel-0.1.12-linux-arm64.tar.gz"
+      sha256 "98c33762e9c9ef39a5e3f591cc60c2dfc23d4ed3d064c63607c5e08470041366"
     else
-      url "https://github.com/simonski/pixel/releases/download/v0.1.10/pixel-0.1.10-linux-amd64.tar.gz"
-      sha256 "c5f82b925d0488d81fde9c90041b9a3b0a2c824b968997a6fa37017e1da1657c"
+      url "https://github.com/simonski/pixel/releases/download/v0.1.12/pixel-0.1.12-linux-amd64.tar.gz"
+      sha256 "3e73d60b923534be2a843c691752375ce97a1fd8482995f3ddeba6e171cdc6e4"
     end
   end
 
