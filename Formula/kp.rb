@@ -3,30 +3,30 @@
 class Kp < Formula
   desc "A terminal tool to manage encrypted key/value pairs"
   homepage "https://github.com/simonski/kp"
-  version "0.0.49"
+  version "0.0.50"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/simonski/kp/releases/download/v0.0.49/kp_0.0.49_darwin_arm64.tar.gz"
-      sha256 "80cf2be3c23eb98c3a3c8a3e9cba5893b37195e23c87a2ec8d5fba26c3f6c094"
+      url "https://github.com/simonski/kp/releases/download/v0.0.50/kp_0.0.50_darwin_arm64.tar.gz"
+      sha256 "e958f88ccc88cb16a3a6f7221b8a30d04fd8ce10a040c3701c9c61084e770751"
     end
 
     on_intel do
-      url "https://github.com/simonski/kp/releases/download/v0.0.49/kp_0.0.49_darwin_amd64.tar.gz"
-      sha256 "8051ea43eeb7d92a63b97dfc76ed3f3ee700ff6e48dbd6a2f53484cc2fa6d98d"
+      url "https://github.com/simonski/kp/releases/download/v0.0.50/kp_0.0.50_darwin_amd64.tar.gz"
+      sha256 "2cb8fa9bf8cf28d41213b58b724a07dfee61e36fa4b3a7344011ee3963088b58"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/simonski/kp/releases/download/v0.0.49/kp_0.0.49_linux_arm64.tar.gz"
-      sha256 "ccca664617c55e25ccb078a30df98ffaad71c474fc45c655c67df3fec6a0f86b"
+      url "https://github.com/simonski/kp/releases/download/v0.0.50/kp_0.0.50_linux_arm64.tar.gz"
+      sha256 "fe13e7c336f2166d22d3028978e52cbcadf68144b911ceb2883611579a587771"
     end
 
     on_intel do
-      url "https://github.com/simonski/kp/releases/download/v0.0.49/kp_0.0.49_linux_amd64.tar.gz"
-      sha256 "7ea1a43943a947b435a45d20ae1565994e4195b57ed434d14947f2091b2868bd"
+      url "https://github.com/simonski/kp/releases/download/v0.0.50/kp_0.0.50_linux_amd64.tar.gz"
+      sha256 "868e0826efb8dbb4df98d5099310a2be672067cf6038e6886a4ba31303b0a68f"
     end
   end
 
@@ -35,6 +35,6 @@ class Kp < Formula
   end
 
   test do
-    assert_match "0.0.49", shell_output("#{bin}/kp version")
+    assert_match "0.0.50", shell_output("#{bin}/kp version")
   end
 end
