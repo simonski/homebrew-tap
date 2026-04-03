@@ -3,29 +3,29 @@
 class Bn < Formula
   desc "CLI tool for managing semantic version numbers via a Buildnumber file"
   homepage "https://github.com/simonski/bn"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/simonski/bn/releases/download/v0.0.9/bn_0.0.9_darwin_arm64.tar.gz"
+      url "https://github.com/simonski/bn/releases/download/v0.0.10/bn_0.0.10_darwin_arm64.tar.gz"
       sha256 ""
     end
 
     on_intel do
-      url "https://github.com/simonski/bn/releases/download/v0.0.9/bn_0.0.9_darwin_amd64.tar.gz"
+      url "https://github.com/simonski/bn/releases/download/v0.0.10/bn_0.0.10_darwin_amd64.tar.gz"
       sha256 ""
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/simonski/bn/releases/download/v0.0.9/bn_0.0.9_linux_arm64.tar.gz"
+      url "https://github.com/simonski/bn/releases/download/v0.0.10/bn_0.0.10_linux_arm64.tar.gz"
       sha256 ""
     end
 
     on_intel do
-      url "https://github.com/simonski/bn/releases/download/v0.0.9/bn_0.0.9_linux_amd64.tar.gz"
+      url "https://github.com/simonski/bn/releases/download/v0.0.10/bn_0.0.10_linux_amd64.tar.gz"
       sha256 ""
     end
   end
@@ -35,6 +35,6 @@ class Bn < Formula
   end
 
   test do
-    assert_match "0.0.9", shell_output("#{bin}/bn bn-version")
+    assert_match "0.0.10", shell_output("#{bin}/bn bn-version")
   end
 end
