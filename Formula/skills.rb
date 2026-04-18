@@ -1,26 +1,26 @@
 class Skills < Formula
   desc "Agentic skills manager for AI-agent skill definitions"
   homepage "https://github.com/simonski/skills"
-  version "0.1.7"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/simonski/skills/releases/download/v0.1.7/skills-darwin-arm64.tar.gz"
-      sha256 "9694af28098adedbe7d05688c663fb069be8108b45d9dc172ec5a133f6ecf651"
+      url "https://github.com/simonski/skills/releases/download/v0.1.9/skills-darwin-arm64.tar.gz"
+      sha256 "a4044de737f99d65f4e1d2cafd55e0d9a6c67413dfe6a54adf63770f2323a7c7"
     else
-      url "https://github.com/simonski/skills/releases/download/v0.1.7/skills-darwin-amd64.tar.gz"
-      sha256 "4679ad0bc56a0ebb342a50632479ed25ebad28294ef3a98ff65102151d6c54a5"
+      url "https://github.com/simonski/skills/releases/download/v0.1.9/skills-darwin-amd64.tar.gz"
+      sha256 "3a13380aaf8bfa769a9efc4f52866667c21a243946a98cfba6904094a3af04da"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/simonski/skills/releases/download/v0.1.7/skills-linux-arm64.tar.gz"
-      sha256 "a23b903f3e7d34c3320b9a96f30f2d80b64ab89553de85cd827736646e02b143"
+      url "https://github.com/simonski/skills/releases/download/v0.1.9/skills-linux-arm64.tar.gz"
+      sha256 "28e6478b6274e1539a0b0cfc1f3a19547c6b6dd736320bbd290ae390b5e187bf"
     else
-      url "https://github.com/simonski/skills/releases/download/v0.1.7/skills-linux-amd64.tar.gz"
-      sha256 "d3434c48c1de2f219d2afc9c79707e2220b0676a4f7f494df1ed34f7ad5f868e"
+      url "https://github.com/simonski/skills/releases/download/v0.1.9/skills-linux-amd64.tar.gz"
+      sha256 "e56f201df69ff25d5f745da7baec0db8e2c6862b849a0df89929dcd64822f961"
     end
   end
 
