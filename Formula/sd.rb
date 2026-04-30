@@ -5,21 +5,21 @@
 class Sd < Formula
   desc "Spec-driven wrapper for agentic programming CLIs"
   homepage "https://github.com/simonski/sd"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/simonski/sd/releases/download/v0.1.5/sd_0.1.5_darwin_amd64.tar.gz"
-      sha256 "15855d02bd02209a94b2c36e61b546df0c192ff0790ceeda7d4a5d6fdca5e1cc"
+      url "https://github.com/simonski/sd/releases/download/v0.1.6/sd_0.1.6_darwin_amd64.tar.gz"
+      sha256 "3f6aa6be9b8fc3f4d573d8a5b5eb644a9773df862beb36f344d2d26cc761bd44"
 
       define_method(:install) do
         bin.install "sd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/simonski/sd/releases/download/v0.1.5/sd_0.1.5_darwin_arm64.tar.gz"
-      sha256 "280460c507e523726f58da0c979ec72b2e64bdf540607246c80f7445d79f5afd"
+      url "https://github.com/simonski/sd/releases/download/v0.1.6/sd_0.1.6_darwin_arm64.tar.gz"
+      sha256 "0ead67a43aad28a5e3d7b4a34405c3975d747ea025710ccf3c8dfd3520029006"
 
       define_method(:install) do
         bin.install "sd"
@@ -29,15 +29,15 @@ class Sd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonski/sd/releases/download/v0.1.5/sd_0.1.5_linux_amd64.tar.gz"
-      sha256 "b23f23b031ec61613b5c3a29460f50a3b951c77c5fd8d6792eff27230dbe1310"
+      url "https://github.com/simonski/sd/releases/download/v0.1.6/sd_0.1.6_linux_amd64.tar.gz"
+      sha256 "2d9273de061b3505a7b23309f3d4fafcac67a6a1bc3c32e6b357f4994ebd07fe"
       define_method(:install) do
         bin.install "sd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonski/sd/releases/download/v0.1.5/sd_0.1.5_linux_arm64.tar.gz"
-      sha256 "e958379c83724c5a680ada882d10e82cc1b31a6b3b27ebceb5b5f706c0d070d4"
+      url "https://github.com/simonski/sd/releases/download/v0.1.6/sd_0.1.6_linux_arm64.tar.gz"
+      sha256 "5a26beb7dd2f26665270703f877b9142710a393fcd87a85850f9b1769719be79"
       define_method(:install) do
         bin.install "sd"
       end
