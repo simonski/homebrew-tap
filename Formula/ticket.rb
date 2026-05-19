@@ -3,30 +3,30 @@
 class Ticket < Formula
   desc "A local-first ticket system for engineers — epics, stories, bugs, requirements, decisions"
   homepage "https://github.com/simonski/ticket"
-  version "0.1.948"
+  version "0.1.954"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/simonski/ticket/releases/download/v0.1.948/tk_0.1.948_darwin_arm64.tar.gz"
-      sha256 "eddfaae724c07e5bdd5d541a89692e97f8eb4aa4ea8472c0d1e22799ef8d8379"
+      url "https://github.com/simonski/ticket/releases/download/v0.1.954/tk_0.1.954_darwin_arm64.tar.gz"
+      sha256 ""
     end
 
     on_intel do
-      url "https://github.com/simonski/ticket/releases/download/v0.1.948/tk_0.1.948_darwin_amd64.tar.gz"
-      sha256 "b0c9ca4bb670405ac84d3deefa70143d0cffc1bf2d623c0214c327c82dcfa460"
+      url "https://github.com/simonski/ticket/releases/download/v0.1.954/tk_0.1.954_darwin_amd64.tar.gz"
+      sha256 ""
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/simonski/ticket/releases/download/v0.1.948/tk_0.1.948_linux_arm64.tar.gz"
-      sha256 "393a82197ffde409ceef2cd694b0f888a402c608c066f47778caa6c02916ca86"
+      url "https://github.com/simonski/ticket/releases/download/v0.1.954/tk_0.1.954_linux_arm64.tar.gz"
+      sha256 ""
     end
 
     on_intel do
-      url "https://github.com/simonski/ticket/releases/download/v0.1.948/tk_0.1.948_linux_amd64.tar.gz"
-      sha256 "31b96466e31944f5d5d84be2a5f1595dde159bfb9f74dd346aed81e400277685"
+      url "https://github.com/simonski/ticket/releases/download/v0.1.954/tk_0.1.954_linux_amd64.tar.gz"
+      sha256 ""
     end
   end
 
@@ -35,6 +35,6 @@ class Ticket < Formula
   end
 
   test do
-    assert_match "0.1.948", shell_output("#{bin}/tk version")
+    assert_match "0.1.954", shell_output("#{bin}/tk version")
   end
 end
