@@ -9,24 +9,24 @@ class Ticket < Formula
   on_macos do
     on_arm do
       url "https://github.com/simonski/ticket/releases/download/v0.1.954/tk_0.1.954_darwin_arm64.tar.gz"
-      sha256 ""
+      sha256 "9a4e9df6d6330d316e8e62724562cd96638b16b57e253e464de5e3c4e6ffcedf"
     end
 
     on_intel do
       url "https://github.com/simonski/ticket/releases/download/v0.1.954/tk_0.1.954_darwin_amd64.tar.gz"
-      sha256 ""
+      sha256 "69c254a2841a70ede5be12a8ff71be61471f3609cd15dec58ef4b2645ce6733f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/simonski/ticket/releases/download/v0.1.954/tk_0.1.954_linux_arm64.tar.gz"
-      sha256 ""
+      sha256 "f77d7a03d1a3366eed981c48308b0c7fe520a05e5f97ab44246b8c89c182f81c"
     end
 
     on_intel do
       url "https://github.com/simonski/ticket/releases/download/v0.1.954/tk_0.1.954_linux_amd64.tar.gz"
-      sha256 ""
+      sha256 "bacc9f44124348b5021ea625cdd0ee1358d2dc8eaef58492ad49fe32afde4593"
     end
   end
 
