@@ -1,26 +1,26 @@
 class Pixel < Formula
-  desc "Pixel - a command-line tool"
+  desc "Pixel - simplified container hosting for your homelab"
   homepage "https://github.com/simonski/pixel"
-  version "0.1.60"
+  version "0.1.210"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/simonski/pixel/releases/download/v0.1.60/pixel-0.1.60-darwin-arm64.tar.gz"
-      sha256 "6624f0c9a8ee7023073b7b1cbed3f76b1be381a8af8e2528ce12a3b737dbabf4"
+      url "https://github.com/simonski/pixel/releases/download/v0.1.210/pixel-0.1.210-darwin-arm64.tar.gz"
+      sha256 "7ade42b204045abb3003405dd3dfea36caec75f1fadea8f74f5cd187f327efb5"
     else
-      url "https://github.com/simonski/pixel/releases/download/v0.1.60/pixel-0.1.60-darwin-amd64.tar.gz"
-      sha256 "c8fc0b8f35ecb8604b10039276ed7bb0fa5c87194fd64a59cc97e3ede1919339"
+      url "https://github.com/simonski/pixel/releases/download/v0.1.210/pixel-0.1.210-darwin-amd64.tar.gz"
+      sha256 "11acd340a5d226e512cc5f4e3abaa084ed6f8c378e104210a06dc3cb9157c39e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/simonski/pixel/releases/download/v0.1.60/pixel-0.1.60-linux-arm64.tar.gz"
-      sha256 "258a42b9e71ec29c21ebdb1ee017f61516a4f15c9df9bfca9b07f7de486f4c58"
+      url "https://github.com/simonski/pixel/releases/download/v0.1.210/pixel-0.1.210-linux-arm64.tar.gz"
+      sha256 "456602c62872fbc9b9a551a86d1f0f2d622d6295d22f9d7a5457e31560f50fe4"
     else
-      url "https://github.com/simonski/pixel/releases/download/v0.1.60/pixel-0.1.60-linux-amd64.tar.gz"
-      sha256 "8f2f21318f4cbb2153e7e5bf27faf3617df7957cf7226ddec877c1eb43852975"
+      url "https://github.com/simonski/pixel/releases/download/v0.1.210/pixel-0.1.210-linux-amd64.tar.gz"
+      sha256 "d20ed294af6e3f526bd578b72370326d2f70b7a04c61df7a1bedeeba8cda8869"
     end
   end
 
@@ -29,7 +29,6 @@ class Pixel < Formula
   end
 
   test do
-    system "\#{bin}/pixel", "version"
+    system "#{bin}/pixel", "version"
   end
 end
-
