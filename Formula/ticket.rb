@@ -9,24 +9,24 @@ class Ticket < Formula
   on_macos do
     on_arm do
       url "https://github.com/simonski/homebrew-tap/releases/download/v0.1.1091/tk_0.1.1091_darwin_arm64.tar.gz"
-      sha256 "3da672107db24a803b2d4fbe56709f28886245dcdffd28cf4dc2481698433fc0"
+      sha256 "fc27bd647dd3e14533d8fb6f2c525a5bad17c9f878e323b162278cb9d26a5064"
     end
 
     on_intel do
       url "https://github.com/simonski/homebrew-tap/releases/download/v0.1.1091/tk_0.1.1091_darwin_amd64.tar.gz"
-      sha256 "0b5f773dd9eb127a65b970fba9cdb5cbae17085bed0baddc2775cb1440a1a940"
+      sha256 "242f401a7c4ba1ff998d834487d7c283db481de886e90870ef0cc32b84f148f3"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/simonski/homebrew-tap/releases/download/v0.1.1091/tk_0.1.1091_linux_arm64.tar.gz"
-      sha256 "0775c94a8ff8cc0cdd8377b861cbfc97e32fe4c1759ae8c612841f91ac2af336"
+      sha256 "af66ec607ca8e23805680a095ab866a55baec73110e5e198faa526cd1fbfee9f"
     end
 
     on_intel do
       url "https://github.com/simonski/homebrew-tap/releases/download/v0.1.1091/tk_0.1.1091_linux_amd64.tar.gz"
-      sha256 "698590e6df880ac3e3d72666e7e01eb21a27f3b8bffa0fe030f8efe6585ab21e"
+      sha256 "6b679edab18d661563e02a6d75988b25c00c44ffdb276696a7b132e406906bbb"
     end
   end
 
