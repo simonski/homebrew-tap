@@ -3,30 +3,30 @@
 class Blog < Formula
   desc "Single-binary static blog tool — posts, ideas, drafts, templates"
   homepage "https://github.com/simonski/blogtool"
-  version "0.1.1"
+  version "0.1.16"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/simonski/homebrew-tap/releases/download/blogtool-v0.1.1/blog_0.1.1_darwin_arm64.tar.gz"
-      sha256 "a7cc7dcad13dcc0d3cb0c2e8d8f05f00ae81c9c9e380fab1000318a52330080b"
+      url "https://github.com/simonski/homebrew-tap/releases/download/blogtool-v0.1.16/blog_0.1.16_darwin_arm64.tar.gz"
+      sha256 "96ea73c48aac26df5ca465c5ac0f9d38d4c447c36ae348190129e7be34a6f2d0"
     end
 
     on_intel do
-      url "https://github.com/simonski/homebrew-tap/releases/download/blogtool-v0.1.1/blog_0.1.1_darwin_amd64.tar.gz"
-      sha256 "34101788d3ab5bdf6c9d715d8e40e2d148c45bb6127e8ca5f73af1316e3d4b8f"
+      url "https://github.com/simonski/homebrew-tap/releases/download/blogtool-v0.1.16/blog_0.1.16_darwin_amd64.tar.gz"
+      sha256 "2cc88817254fd9693c5067998c8e105202b130f8666e3bb5f46599a1b3080b09"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/simonski/homebrew-tap/releases/download/blogtool-v0.1.1/blog_0.1.1_linux_arm64.tar.gz"
-      sha256 "9dbf09b7de43e5ef32b2043b5c8d3c97bdf25d1658d8f8ffcf2d579446f0be14"
+      url "https://github.com/simonski/homebrew-tap/releases/download/blogtool-v0.1.16/blog_0.1.16_linux_arm64.tar.gz"
+      sha256 "19a75e5e19ecc0c9f00af806e84810dbd85270d0748e90c4299fb89167fd65b5"
     end
 
     on_intel do
-      url "https://github.com/simonski/homebrew-tap/releases/download/blogtool-v0.1.1/blog_0.1.1_linux_amd64.tar.gz"
-      sha256 "6efbc3127448d2be3f87ed4c409e7c67c91b9185090b7fcc2f7ea7abe17693ac"
+      url "https://github.com/simonski/homebrew-tap/releases/download/blogtool-v0.1.16/blog_0.1.16_linux_amd64.tar.gz"
+      sha256 "f4e1393ad500c96a5ead5f05841f6330f6b8149c4b1c5b862741a2fe9bce42fa"
     end
   end
 
@@ -35,6 +35,6 @@ class Blog < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/blog version")
+    assert_match "0.1.16", shell_output("#{bin}/blog version")
   end
 end
